@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>跳转中....</title>
+</head>
+<script type="text/javascript">
+    window.onload = function () {
+        var str = location.href; //取得整个地址栏
+        var arr = str.split("?");
+        var arr2 = arr[1].split("=");
+        var url = decodeURIComponent(arr2[1]);
+        window.location.href = url;
+    }
+</script>
+<body>
+11111
+</body>
+</html>
